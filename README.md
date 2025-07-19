@@ -1,6 +1,7 @@
 # Ecommerce Website
 
 A React-based ecommerce website project showcasing clothing products with categories, cart functionality, and checkout.
+
 Check out the live demo here: [https://anamaisuradze01.github.io/ecommerce-website/](https://anamaisuradze01.github.io/ecommerce-website/)
 ## Features
 - Browse products by category (Men, Women, Kids)
