@@ -1,0 +1,266 @@
+.checkout-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  margin-left: 70px;
+  gap: 4rem;
+  margin-top: 50px;
+}
+
+.checkout-form {
+  flex: 2;
+  max-width: 445px;
+}
+
+.checkout-steps {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: -0.9px;
+  color: #888;
+}
+
+.checkout-steps .step {
+  margin: 0 0.1rem;
+}
+
+.checkout-steps .current {
+  font-weight: bold;
+  color: black;
+}
+
+.checkout-steps .finished {
+  font-weight: bold;
+  color: #5ece7b;
+}
+
+h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25.6px;
+  letter-spacing: -0.9px;
+}
+
+.checkout-input,
+.checkout-gridName input,
+.checkout-grid input,
+.checkout-grid select,
+.checkout-form select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  color: #616161;
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25.6px;
+  letter-spacing: 0px;
+}
+
+.checkout-input {
+  width: 418px;
+}
+
+.checkout-grid,
+.checkout-gridName {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.checkout-gridName input[type="text"] {
+  width: 200px;
+  height: 18px;
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25.6px;
+  letter-spacing: 0px;
+}
+
+.checkout-grid input[type="text"] {
+  width: 110px;
+  height: 18px;
+  min-width: 110px;
+  max-width: 110px;
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25.6px;
+  letter-spacing: 0px;
+}
+
+.save-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.save-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  border-radius: 0;
+  accent-color: #5ece7b;
+  margin-right: 0.5rem;
+}
+
+.checkout-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0rem;
+  padding-left: 20px;
+}
+
+.back-btn {
+  margin-top: 15px;
+  background: none;
+  border: none;
+  color: #5ece7b;
+  cursor: pointer;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25.6px;
+  letter-spacing: -0.9px;
+}
+
+.continue-btn {
+  background-color: #5ece7b;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.continue-btn.disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.continue-btn.disabled:hover {
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.checkout-summary {
+  width: 450px;
+  min-width: 450px;
+  max-width: 450px;
+  padding-left: 2rem;
+  margin-right: 130px;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.checkout-container .summary-image {
+  width: 164px;
+  height: 130px;
+  background: white !important;
+  border: 2px solid #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
+}
+
+.summary-image img {
+  width: 113px;
+  height: 103px;
+  object-fit: cover;
+}
+
+.summary-quantity {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #5ece7b;
+  border-radius: 50%;
+  color: white;
+  font-size: 14px;
+  padding: 0.2rem 0.5rem;
+}
+
+.itemInfo {
+  margin-top: -50px;
+  margin-left: 30px;
+}
+
+.itemName {
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 27px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.price {
+  font-weight: bold;
+  color: #5ece7b;
+}
+
+.summary-details {
+  border-top: 1px solid #56B28033;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 2rem;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25.6px;
+  letter-spacing: -0.9px;
+  vertical-align: bottom;
+  color: #616161;
+}
+
+.summary-details div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.subtotal,
+.total {
+  color: black;
+  font-weight: 600;
+}
+
+.summary-total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-top: 1px solid #56B28033;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.checkout-input.error,
+.checkout-gridName input.error,
+.checkout-grid input.error {
+  border: 1px solid #ff4444;
+  background-color: #fff5f5;
+}
+
+.checkout-input.error:focus,
+.checkout-gridName input.error:focus,
+.checkout-grid input.error:focus {
+  border-color: #ff4444;
+  box-shadow: 0 0 0 2px rgba(255, 68, 68, 0.2);
+}

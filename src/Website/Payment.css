@@ -1,0 +1,139 @@
+.info-combined-box-payment {
+  border: 1px solid #56B28033;
+  background-color: white;
+  border-radius: 6px;
+  padding-top: 13px;
+  margin-bottom: 2rem;
+  width: 445px;
+  height: 100px;
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15.6px;
+  letter-spacing: -0.6px;
+}
+
+.info-row-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-height: 25px;
+  justify-content: center;
+  padding: 3px 0;
+}
+
+.info-row-inline-payment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 25px;
+  padding: 3px 0;
+}
+
+.full-box {
+  height: auto;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #56B28033;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.divider-line {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 0.5rem 0;
+}
+
+.payment-method-box {
+  border: 1px solid #c6e4cf;
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 0;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  height: 250px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.payment-method-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-family: Helvetica;
+  color: #56B280;
+  background-color: #56B28033;
+  width: 100%;
+  height: 60px;
+  padding: 0 1rem;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  box-sizing: border-box;
+}
+
+.payment-method-body {
+  background-color: #fff;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-sizing: border-box;
+}
+
+.card-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.payment-input {
+  border: 1px solid #ccc;
+  padding: 0.7rem;
+  font-family: Helvetica;
+  font-size: 14px;
+  width: 94%;
+}
+
+.payment-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.payment-input.small {
+  flex: 1;
+}
+
+.payment-input.error {
+  border: 1px solid #ff4444;
+  background-color: #fff5f5;
+}
+
+.payment-input.error:focus {
+  border-color: #ff4444;
+  box-shadow: 0 0 0 2px rgba(255, 68, 68, 0.2);
+}
+
+.continue-btn.disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.continue-btn.disabled:hover {
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.summary-image {
+  background: white !important;
+}

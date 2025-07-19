@@ -1,0 +1,187 @@
+.product-page {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 6rem 0 0 4rem;
+  padding-left: 70px;
+}
+
+.product-gallery {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.product-thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 80px;
+  height: 80px;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: border 0.2s;
+}
+
+.thumbnail.selected {
+  border: 2px solid #5ECE7B;
+}
+
+.product-main-image {
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 610px;
+  height: 511px;
+}
+
+.product-main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.product-info-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 2rem;
+}
+
+.product-title-block {
+  margin-bottom: 1rem;
+}
+
+.product-brand {
+  margin: 0 0 0.5rem 0;
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 27px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.product-name-detail {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 27px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.product-price {
+  margin-top: 15px;
+}
+
+.product-description {
+  color: #333;
+  margin-bottom: 2rem;
+  margin-top: 25px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
+}
+
+.product-sizes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+  margin-bottom: 120px;
+}
+
+.product-sizes-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.label {
+  margin-bottom: 0.2rem;
+  margin-right: 0;
+  font-family: Roboto Condensed;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.size-btn-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.size-btn {
+  width: 63px;
+  height: 45px;
+  background: #fff;
+  border: 1.7px solid black;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 5%;
+  text-align: center;
+  vertical-align: middle;
+  color: #222;
+  padding: 0.4rem 1.1rem;
+  margin-right: 0.5px;
+  cursor: pointer;
+  transition: border 0.2s, background 0.2s, color 0.2s;
+}
+
+.size-btn.selected,
+.size-btn:hover {
+  border: 2px solid black;
+  background: black;
+  color: #fff;
+}
+
+.add-to-cart-main-btn {
+  width: 300px;
+  height: 52px;
+  margin-top: 30px;
+  background: #5ECE7B;
+  color: #fff;
+  border: none;
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(94, 206, 123, 0.08);
+}
+
+.add-to-cart-main-btn.disabled {
+  background: #f5f5f5;
+  color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.add-to-cart-main-btn.disabled:hover {
+  background: #f5f5f5;
+  color: #ccc;
+}
